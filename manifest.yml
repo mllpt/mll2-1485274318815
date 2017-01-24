@@ -1,0 +1,11 @@
+applications:
+- path: javaCloudantWorkloadSchedulerApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: mll2
+  host: mll2
+  disk_quota: 1024M
+  services:
+  - mll-WorkloadScheduler
+  - mll2-cloudantNoSQLDB
